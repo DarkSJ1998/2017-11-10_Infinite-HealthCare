@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	Infinite HealthCare - Clinic for all your needs
+	</title>
+	<style>
+	.division{
+	margin:0px;
+	padding:0px;
+	}
+			body {
+             margin:0px;
+			 
+			background-attachment:fixed; }
+	</style>
+	<script type="text/javascript">
+		function submitvals()
+		{
+			if(confirm("Are you sure you want to submit?") == true)
+			{
+				alert("Form Data Submitted successfully!");
+			}
+		}
+		
+		function resetvals()
+		{
+			alert("Form Values have been restored to their default values.");
+		}
+	</script>
+</head>
+<body background = "images/appointmentMessage.jpg" link = "white" alink = "violet" vlink = "red">
+
+<div style = "color:white;font-family:Calibri;font-size:30px; width:100%">
+<center><h1>Book an Appointment with us :-</h1></center>
+<hr color = "white">
+</div><br><br><br>
+<div>
+<form id = "bookAppointment" method = "POST">
+<pre style = "font-family:Segoe UI;font-size:20px;text-align:center;color:white;">
+	First Name : 			<input type = "text" placeholder = "First Name" style = "width:15%;" autofocus required><br>
+	Last Name : 			<input type = "text" placeholder = "Last Name" style = "width:15%;" required><br>
+	Gender :									
+					<input type="radio" value = "male" name = "gender" checked> Male					
+					<input type="radio" value = "female" name = "gender"> Female				
+					<input type="radio" value = "other" name = "gender"> Other					
+						
+	Age : 				<input type = "text" placeholder = "Age" style = "width:15%;" maxlength = 2 required><br>
+	Phone number : 		<input type = "text" placeholder = "Phone number" style = "width:15%;" maxlength = 10 required><br>
+	Email-ID : 			<input type = "text" placeholder = "Email-ID" style = "width:15%;" required><br>
+Date of Appointment (MM/DD/YYYY) : 	<input type = "date" placeholder = "Date of Appointment" style = "width:15%;" required><br>
+	Department :					<select name="dept" required>
+										<option value="null">Select Department</option>
+										<option value="Blood Tests">Blood Tests</option>
+										<option value="General Body Checkup">General Body Checkup</option>
+										<option value="Ultrasound">Ultrasound</option>
+										<option value="Physiotherapy">Physiotherapy</option>
+										<option value="CT Scan">CT Scan</option>
+										<option value="X Ray">X Ray</option>
+										<option value="MRI Scan">MRI Scan</option>
+										<option value="Eye Care">Eye Care</option>
+										<option value="ENT">ENT</option>
+										<option value="Vaccination">Vaccination</option>
+										<option value="Dental Checkup">Dental Checkup</option>
+									</select>
+
+</pre>
+<center>
+<!-- <a href = "#"><img src = "images\book now.png" border = 4></a><br><input type = "Reset" style = "width:147px;height:59px;"> -->
+<button type="submit" style = "width:155px;height:59px;"><img src = "images\book now.png"></button><br><input type = "Reset" style = "width:155px;height:59px;" onclick="resetvals()">
+</center>
+</form>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br>
+
+	<div style = "background-color:#252525;color:white;font-family:Calibri;font-size:30px;">
+	<!--img src = "images/appointmentMessage.bkp.jpg"-->
+		<br>
+
+		<div style = "font-size:20px;margin-left:7%;margin-right:7%;">
+
+		</div>
+		
+	
+	</div>
+	
+	<footer>
+	<div class="division" style = "background-color:#252525;color:white;font-family:Calibri;font-size:15px;width:100%;">
+		<br><hr color = "white"> <p style = "text-align:center;font-size:25px;">Infinite HealthCare © 2017 All rights reserved. </p><br><br>
+		<p style = "text-align:right;font-size:20px;">Designed by : Sarthak Jain &nbsp
+		<a href = "mailto:sarthakjn12@gmail.com"><img src = "images\mail.png" height = 20px></a>&nbsp&nbsp
+		<br>
+		Contact us : infinite_healthcare@gmail.com&nbsp<a href = "mailto:infinite_healthcare@gmail.com"><img src = "images\mail.png" height = 20px></a> &nbsp&nbsp </p>
+	<br><br>
+	</div>
+	</footer>
+</body>
+</html>

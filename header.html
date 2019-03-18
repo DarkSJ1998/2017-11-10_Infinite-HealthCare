@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>
+	Infinite HealthCare - Clinic for all your needs
+	</title>
+	<script type = "text/javascript">
+		function bck() { window.history.back(); }
+		function fwd() { window.history.forward(); }
+		function white()
+		{
+			var a = document.getElementById("doctorLogin");
+			a.style.border = "1px solid white";
+		}
+		function changeBack()
+		{
+			var a = document.getElementById("doctorLogin");
+			a.style.border = "";
+		}
+	</script>
+	<style>
+	.button {
+		background-color: #01A4E4;
+		color: white;
+		font-family: Tahoma;
+		border: 1px solid white;
+		border-radius: 8px;
+		height: 30px;
+		width: 90px;
+		text-align: center;
+	}
+	</style>
+</head>
+<body bgcolor = "#01A4E4" alink = "white" vlink = "white" link = "white">
+<p style="margin-top:15px;">
+<span id = "navigation" style = "color:white;font-family:Calibri;margin-left:2%;font-size:18px;">
+<button type = "button" class="button" onclick = "bck()"> Go Back </button>&emsp;
+<button type = "button" class="button" onclick = "fwd()"> Forward </button>
+</span>
+
+<a id = "doctorLogin" href = "doctorLogin.html" target = "body" onmouseover = "white()" onmouseout = "changeBack()" style = "text-decoration:none;float:right;color:white;font-family:Segoe UI;margin-right:2%;margin-left:2%;font-size:18px;"> &nbsp Doctor? Login Here &nbsp </a>
+
+<span id = "date" style = "float:right;color:white;font-family:Calibri;font-size:18px;">
+<script>
+setInterval(time, 100);
+
+function time()
+{
+var d = new Date();
+var tt = "AM"
+var hh = d.getHours();
+var mm = d.getMinutes();
+var ss = d.getSeconds();
+
+if(parseInt(hh/10) == 0)
+	hh = "0"+hh;
+
+if(hh > 12)
+{
+	hh = hh - 12;
+	tt = "PM";
+}
+
+if(parseInt(mm/10) == 0)
+	mm = "0"+mm;
+
+if(parseInt(ss/10) == 0)
+	ss = "0"+ss;
+
+document.getElementById("date").innerHTML = "It's " + hh+":"+mm+":"+ss+" "+tt+" and the date is : "+d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
+}
+</script>
+</span>
+
+</p>
+
+</body>
+</html>
